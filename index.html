@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            color: blue;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello World</div>
+    <script>
+        // Toggle theme functionality
+        const toggleTheme = () => {
+            document.body.style.backgroundColor = document.body.style.backgroundColor === 'black' ? 'white' : 'black';
+            document.body.style.color = document.body.style.color === 'white' ? 'blue' : 'white';
+        };
+
+        // Create a button for toggling the theme
+        const button = document.createElement('button');
+        button.textContent = 'Toggle Theme';
+        button.onclick = toggleTheme;
+        document.body.appendChild(button);
+    </script>
+    <!-- build-id: 2023-10-01T12:00:00Z -->
+</body>
+</html>
+<!-- build-id: 2025-10-16T11:47:16.342700 -->
